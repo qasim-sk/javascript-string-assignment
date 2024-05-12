@@ -8,11 +8,16 @@
 <body>
     <h1>String Manipulation in JavaScript</h1>
     <script type="module">
-        import {capitalize} from "./stringManipulation.js"
-        let mySen = "hello world!"
-        let mySenCap = capitalize(mySen);
-        console.log(mySen);
-        console.log(mySenCap);
+        import {capitalize, capitalizeAll} from "./stringManipulation.js"
+        //Plane Sentance
+        let mySen = "life is about making an impact, not making an income."
+        //Capitalize First Letter
+        let myEachCap = capitalize(mySen)
+        // Capitalize Each Letter
+        let myAllCap = capitalizeAll(mySen)
+        console.log(mySen); //plane text
+        console.log(myEachCap); // first letter capitalize text
+        console.log(myAllCap); //all capitalize text
 
     </script>
 </body>
