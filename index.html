@@ -8,17 +8,27 @@
 <body>
     <h1>String Manipulation in JavaScript</h1>
     <script type="module">
-        import {capitalize, capitalizeAll} from "./stringManipulation.js"
+        import {capitalize, capitalizeAll, isExist, getOccurrenceCount, wordDensity} from "./stringManipulation.js"
         //Plane Sentance
         let mySen = "life is about making an impact, not making an income."
         //Capitalize First Letter
         let myEachCap = capitalize(mySen)
         // Capitalize Each Letter
         let myAllCap = capitalizeAll(mySen)
+        //is Word is Exist in Sentance
+        let word = "animal";
+        // Word Occurrence Count
+        word = "is";
+        let count = getOccurrenceCount(mySen, word);
+        // Word Density Calculation
+        const densityMap = wordDensity(mySen);
+
         console.log(mySen); //plane text
         console.log(myEachCap); // first letter capitalize text
         console.log(myAllCap); //all capitalize text
-
+        console.log(isExist(mySen, word));//word is exist 
+        console.log(count);//word count
+        console.log(densityMap); //word density
     </script>
 </body>
 </html>
